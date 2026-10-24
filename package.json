@@ -1,0 +1,10 @@
+{
+  "name": "driftguard-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Preview launcher only. DriftGuard AI is a Python/Streamlit app; see README.md.",
+  "scripts": {
+    "dev": ".venv/bin/streamlit run app.py --server.port 3000 --server.address 0.0.0.0 --server.headless true",
+    "test": ".venv/bin/pytest -q"
+  }
+}

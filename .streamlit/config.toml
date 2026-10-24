@@ -1,0 +1,23 @@
+[server]
+maxUploadSize = 50
+headless = true
+# The v0 preview serves the app through a proxy on a different origin. Streamlit's
+# default same-origin check rejects that WebSocket (/_stcore/stream) with a 403, so the
+# UI never leaves its skeleton state. Both must be off together: Streamlit forces CORS
+# back on while XSRF protection is enabled. Re-enable both for a public deployment.
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#0D9488"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F5F9"
+textColor = "#0F172A"
+font = "sans serif"
