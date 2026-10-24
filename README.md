@@ -22,6 +22,7 @@ pip install -r requirements-dev.txt  # app + pytest
 
 ```bash
 streamlit run app.py
+https://mainvenvpscusershpdownloadsdrift-guard-ai-development-k4vxbsga.streamlit.app/
 ```
 
 Open http://localhost:8501. To pick a port or bind to all interfaces:
